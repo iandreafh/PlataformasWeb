@@ -19,7 +19,7 @@ builder.Services.AddSingleton<PlataformasWeb.PlatformsDataStore>();
 
 builder.Services.AddDbContext<PlatformInfoContext>(
     dbContextOptions => dbContextOptions.UseSqlite(
-        builder.Configuration["ConnectionStrings:PlatformInfoDBConnectionString"]));
+        builder.Configuration["ConnectionStrings:PlataformasInfoDBConnectionString"]));
 
 builder.Services.AddScoped<IPlatformInfoRepository, PlatformInfoRepository>();
 
