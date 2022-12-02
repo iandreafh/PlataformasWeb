@@ -1,8 +1,15 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+@section Scripts {
+    <script src="~/web/vendor.js"></script>
+    <script src="~/web/polyfills.js"></script>
+    <script src="~/web/runtime.js"></script>
+    <script src="~/web/main.js" asp-append-version="true"></script>
+}
+@section head {
+    <link href="~/web/styles.css" rel="stylesheet" />
+}
 
-<div class="text-center">
-    <h1 class="display-4">Plataformas Web</h1>
-    <p>Los mejores catálogos de un vistazo.</p>
-</div>
+<app-root></app-root>
+

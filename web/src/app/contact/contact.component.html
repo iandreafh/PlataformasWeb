@@ -1,0 +1,35 @@
+<div class="container">
+  <h3>Contacta con nosotros</h3>
+  <form class="form-horizontal" method="post">
+    <div class="form-group">
+      <label class="control-label col-sm-2" asp-for="Name">Nombre:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" placeholder="Nombre..." asp-for="Name" />
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="asunto">Asunto:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="asunto" placeholder="Asunto..." name="asunto">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="textarea">Mensaje:</label>
+      <div class="col-sm-10">
+        <textarea name="textarea" rows="3" cols="119"placeholder="Mensaje..."></textarea>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+        <div class="checkbox">
+          <label><input type="checkbox" name="privacy">Acepto la política de privacidad de datos</label>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="submit" class="btn btn-default">Enviar</button>
+      </div>
+    </div>
+  </form>
+</div>
